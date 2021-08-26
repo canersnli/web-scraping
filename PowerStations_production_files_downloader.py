@@ -24,9 +24,12 @@ start="01.01.2019"
 end="22.08.2021"
 reload_page = False
 not_downloaded_list = []         # Gathering ids of not downloaded files, in case any station's file is not downloaded 
-start_id = 1                     # santral id to begin with in case restarting process after error        
-refresh_threshold = 6   
-                                # This is a self-discovered trick that avoids detection of my scraper bot. Each time number of "refresh_threshold" files were downloaded, it refreshes page in order to avoid to be detected as scraper by web-site host. In case host detects my scraper bot, it throws warning: "Passthrough is not supported, GL is disabled" , causes drastically long awaiting times which leads TimeoutExceptions eventually eventhough I set very long webdriver waiting times between processes.
+start_id = 1                     # santral id to begin with in case restarting process after error
+
+refresh_threshold = 6            # This is a self-discovered trick that avoids detection of my scraper bot. Each time number of "refresh_threshold" files
+                                 # were downloaded, it refreshes page in order to avoid to be detected as scraper by web-site host. In case host detects
+                                 # my scraper bot, it throws warning: "Passthrough is not supported, GL is disabled" , causes drastically long awaiting
+                                 # times which leads TimeoutExceptions eventually eventhough I set very long webdriver waiting times between processes.
 
 for i in range(start_id,1779):
 
