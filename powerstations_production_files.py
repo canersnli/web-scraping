@@ -124,6 +124,6 @@ for i in range(START_ID, 1779):
         RELOAD_PAGE = True
 
     print(i)
-    print('powerPlant_'+str(i)+" data has been downloaded successfully")
+    print(f"PowerPlant_{i} data has been downloaded successfully")
     # print(santral.get_attribute("data-label"))
 print(not_downloaded_list)
